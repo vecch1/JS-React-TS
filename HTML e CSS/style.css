@@ -4,5 +4,28 @@
 
 body {
     padding-bottom: 500px;
-    background-color: aquamarine;
+    background-color: rgb(144, 163, 157);
+}
+
+.paragraph {
+    background-color: black;
+    padding: 5px;
+}
+
+#paragraph {
+    background-color: aqua;
+    color: green;
+    padding: 5px;
+}
+
+h2 {
+    border-bottom: 2px solid red;
+}
+
+.titulo {
+    border-bottom: 2px solid blue;
+}
+
+#algum-titulo {
+    border-bottom: 3px solid green;
 }
