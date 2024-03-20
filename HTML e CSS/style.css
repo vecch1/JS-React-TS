@@ -29,3 +29,21 @@ h2 {
 #algum-titulo {
     border-bottom: 3px solid green;
 }
+
+/* cores css */
+.color-name {
+    color: lavender;
+    font-size: 20px;
+}
+
+/* se #ffffff pode ser #fff ou #112233 pode ser #123 */
+.hex {
+    color: #5544dd;
+    font-size: 20px;
+}
+
+.hex2 {
+    color: #d70;
+    font-size: 20px;
+
+}
