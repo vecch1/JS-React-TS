@@ -47,3 +47,16 @@ h2 {
     font-size: 20px;
 
 }
+
+.rgb{
+  color: rgb(255,0,100);
+}
+
+
+.rgb2{
+    color: rgb(70,120,220);
+}
+
+.rgba {
+    color: rgba(50,0,200,1);
+}
