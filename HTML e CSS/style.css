@@ -4,7 +4,7 @@
 
 body {
     padding-bottom: 500px;
-    background-color: rgb(144, 163, 157);
+    
 }
 
 .paragraph {
@@ -67,4 +67,28 @@ h2 {
 
 .hsl2 {
     color: hsl (200, 30%, 30%);
+}
+
+
+.Back-1 {
+    background-color: #000;
+    color: yellow;
+}
+
+.Back-2 {
+    background-color: blue;
+    color: black;
+}
+
+
+.bg-opacity {
+    background-color: green;
+    opacity: 0.9;
+    font-size: 30px;
+}
+
+.rgba-opacity {
+    font-size: 25px;
+    background-color: rgba(70, 120, 20, 0.5);
+    color: #000;
 }
