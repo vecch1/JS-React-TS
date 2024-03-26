@@ -92,3 +92,27 @@ h2 {
     background-color: rgba(70, 120, 20, 0.5);
     color: #000;
 }
+
+.BG-img {
+    background-image: url("assets/nature.avif");
+    color: #fff;
+    padding: 10px;
+} 
+ /* ctrl + space to find img  and URl("..")  to find a img in other folder  */
+
+ .BG-img2 {
+    background-image: url("assets/bridge.jpg");
+    color: #fff;
+    padding: 10px;
+} 
+
+.not-centered-bg, .centered-bg {
+    height: 400px;
+    width: 400px;
+    background-image: url("assets/bridge.jpg");
+}
+
+.centered-bg {
+    background-position: center;
+    background-size: cover;
+}
