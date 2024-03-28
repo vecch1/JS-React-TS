@@ -116,3 +116,26 @@ h2 {
     background-position: center;
     background-size: cover;
 }
+
+.height-width {
+    height: 200px;
+    width: 100px;
+    background-color: red;
+}
+
+.height-width2 {
+    height: 200px;
+    width: 150px;
+    background: #333;
+}
+
+.without-padding {
+    background-color: #111;
+    color: white;
+}
+
+.padding {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+}
