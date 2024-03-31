@@ -101,7 +101,7 @@ h2 {
  /* ctrl + space to find img  and URl("..")  to find a img in other folder  */
 
  .BG-img2 {
-    background-image: url("assets/bridge.jpg");
+    background-image: url("img/bridge.jpg");
     color: #fff;
     padding: 10px;
 } 
@@ -109,7 +109,7 @@ h2 {
 .not-centered-bg, .centered-bg {
     height: 400px;
     width: 400px;
-    background-image: url("assets/bridge.jpg");
+    background-image: url("img/bridge.jpg");
 }
 
 .centered-bg {
@@ -138,4 +138,34 @@ h2 {
     background-color: #444343;
     color: white;
     padding: 20px;
+}
+
+.padding-individual {
+    background-color: black;
+    color: #fff;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+}
+
+/* ordem - top, right,bottom and left */
+.shorthand {
+    background-color: black;
+    color: #fff;
+    padding: 20px 10px 10px 40px;
+}
+
+.without-border-box {
+background-color: #444;
+color: #fff;
+ width: 400px;
+padding: 50px
+}
+.border-box {
+background-color: #777;
+color: #fff;
+ width: 400px;
+padding: 50px;
+box-sizing:border-box ;
 }
