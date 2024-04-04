@@ -13,4 +13,5 @@ outline: 5px dotted blue;
     color: green;
     padding-left: 80px;
     padding-top: 10px;
+    border-bottom: 3px solid red;
 }
