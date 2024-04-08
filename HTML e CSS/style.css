@@ -259,3 +259,15 @@ padding: 20px;
     text-decoration: none;
     color: red;
 }
+
+
+.upper {
+    text-transform: uppercase;
+}
+.lower {
+    text-transform: lowercase;
+}
+
+.spacing {
+    letter-spacing: 5px;
+}
