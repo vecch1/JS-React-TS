@@ -236,3 +236,26 @@ padding: 20px;
     border: 8px solid #478;
     border-radius: 20px;
 }
+
+.text-align {
+    text-align: right;
+}
+
+.container-center {
+    text-align: center;
+    width: 300px;
+    border: 1px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-trough{
+    text-decoration: line-through;
+}
+
+.remove-underline{
+    text-decoration: none;
+    color: red;
+}
