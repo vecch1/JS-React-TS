@@ -271,3 +271,53 @@ padding: 20px;
 .spacing {
     letter-spacing: 5px;
 }
+
+
+.serif {
+    font-family: serif;
+}
+
+.sans-serif{
+    font-family: sans-serif;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique{
+    font-style: oblique;
+}
+
+.font100 {
+    font-weight: 100;
+    font-family: helvetica;
+}
+
+.font900{
+    font-weight: 900;
+    font-family: helvetica;
+
+}
+
+.small{
+    font-size: 6px;
+}
+
+.big{
+    font-size: 70px;
+}
+    
+    
