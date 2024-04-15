@@ -320,4 +320,20 @@ padding: 20px;
     font-size: 70px;
 }
     
-    
+.inline-box {
+    width: 50px;
+    height: 50px;
+    background-color: #c77;
+    margin: 10px; 
+    display: inline-block;
+}    
+
+.block {
+    background-color: #333;
+    display: block;
+    margin:10px;
+}
+
+.invisible {
+    display: none;
+}
