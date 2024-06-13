@@ -48,11 +48,47 @@
         </select>
     </div>
 
+    <!-- textarea -->
+    <div>
+        <label for="comment">comentario:</label>
+        <textarea name="comment"></textarea>
+
+    </div>
+
+    <!-- fieldset e legend -->
+        <div>
+            <fieldset>
+                <legend>preencha as suas informaçoes</legend>
+                <label for="firstname">Nome:</label>
+                <input type="text" name="Firstname">
+                <label for="Lastname">Sobrenome:</label>
+                <input type="text" name="Lastname">
+            </fieldset>
+        </div>
+
+        <!-- DataList -->
+        <div>
+            <label for="flavor">escolha o sabor:</label>
+            <input type="text" list="flavors" name="flavor">
+
+            <datalist id="flavors">
+                <option value="cereja"></option>
+                <option value="morango"></option>
+                <option value="abacaxi"></option>
+                <option value="chocolate"></option>
+            </datalist>
+        </div>
+
+        <!-- input senha -->
+        <div>
+            <label for="password">digite a sua senha</label>
+            <input type="password" name="password">
+        </div>
 
     <!-- envio de form -->
       <div><input type="submit" value="Enviar"/></div>  
 
-        
+
     </form>
 </body>
 </html>
