@@ -88,6 +88,50 @@
     <!-- envio de form -->
       <div><input type="submit" value="Enviar"/></div>  
 
+        <!-- resetar form -->
+        <div>
+            <input type="reset" value="resetar">
+        </div>
+        
+        <!-- input radio -->
+        <div>
+            <label for="carros">escolha o seu carro</label>
+            <div class="radio">
+                <input type="radio" value="bmw" name="carros" >
+                <label for="bmw">BMW</label>
+            </div>          
+            <div class="radio">
+                <input type="radio" value="ferrari" name="carros" >
+                <label for="ferrari">ferrari</label>
+            </div>          
+            <div class="radio">
+                <input type="radio" value="renault" name="carros" >
+                <label for="renault">Renault</label>
+            </div>          
+        </div>
+        
+        <!-- checkbox -->
+        <div>
+            <label for="optionals">opçionais de carro:</label>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="big_tires">
+                <label for="big_tires">Pneus grandes</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="small_tires">
+                <label for="small_tires">Pneus pequenos</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="mid_tires">
+                <label for="mid_tires">Pneus medios</label>
+            </div>
+        </div>
+
+        <!-- input de datas -->
+        <div>
+            <label for="birthday">data de aniversario</label>
+            <input type="date" name="birthday">
+        </div>
 
     </form>
 </body>
