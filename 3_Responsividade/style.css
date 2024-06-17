@@ -1,0 +1,23 @@
+/* media query */
+
+h1 {
+    color: red;
+}
+
+@media screen and (max-width: 500px){
+    h1 {
+        color: blue;
+    }
+}
+
+
+/* min-width */
+p {
+    color: black
+}
+
+@media screen and (min-width: 800px){
+    p {
+        color: green;
+    }
+}
