@@ -21,3 +21,21 @@ p {
         color: green;
     }
 }
+
+/* breakpoints maus usados
+600px e abaixo : celular
+768px ate 600px: tablets
+992px ate 768px: mini laptops
+992px e acima : laptops e desktop
+*/
+
+/* landscape (tela deitada do celular)*/
+h3 {
+    display: none;
+}
+
+@media screen and (orientation: landscape){
+    h3 {
+        display: block;
+    }
+}
