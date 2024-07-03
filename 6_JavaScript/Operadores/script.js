@@ -21,3 +21,22 @@ console.log("Um texto \t Com espaço")
 console.log("Meu " + "nome " + "é " + "lucas");
 // interpolação
 console.log(`A soma de 2 + 2 é: ${2+2}`);
+// boolean
+console.log(typeof true);
+console.log(5 < 20);
+console.log(5 > 20);
+// comparaçoes
+console.log(5<=5);
+console.log(10==10);
+console.log(10 != 11)
+// valor identico 
+console.log(5*6 === 6*5);
+console.log(9 === "9")
+// operadores logicos
+console.log(true && true);
+console.log(5 > 2 && 5 < 2);
+console.log(5 > 2 || 5 < 2);
+// empty values
+console.log(typeof undefined, typeof null);
+console.log(null==undefined);
+
