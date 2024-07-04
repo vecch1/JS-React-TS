@@ -39,4 +39,5 @@ console.log(5 > 2 || 5 < 2);
 // empty values
 console.log(typeof undefined, typeof null);
 console.log(null==undefined);
+// variaveis let e const
 
