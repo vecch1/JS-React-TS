@@ -28,4 +28,13 @@ console.log(NomeCompleto)
 
 let _teste = "ok"
 let $teste = "ok"
-console.log(_teste,$teste)
+console.log(_teste,$teste) 
+
+// funçao prompt
+const age = prompt("Digite sua idade:");
+
+console.log(`Você tem ${age} anos.`);
+
+// funçao alert
+const z = 10
+alert(`O numero é ${z}`);
