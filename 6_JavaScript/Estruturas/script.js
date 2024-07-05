@@ -38,3 +38,35 @@ console.log(`Você tem ${age} anos.`);
 // funçao alert
 const z = 10
 alert(`O numero é ${z}`);
+
+// objeto math
+console.log(Math.max(5,2,1,10))
+console.log(Math.floor(5.14))
+console.log(Math.ceil(5.14))
+// objeto console
+console.log("Teste!");
+console.error("Erro!");
+console.warn("Aviso!");
+// Estruturas de controle  if/else
+const n = 10;
+if (n > 5){
+    console.log("N é maior que 5!")
+}
+
+const user = "Lucas"
+if (user === "Lucas"){
+    console.log("Olá Lucas!")
+}else{
+    console.log("Olá User")
+}
+// else if
+const userage = 18;
+const username = "Lucas";
+
+if (username === "Pedro"){
+    console.log("Seja bem vindo Pedro!")
+}else if (username === "Lucas" && userage === 18){
+    console.log("Olá Lucas, você tem 18 anos")
+}else {
+    console.log("Nenhuma condição aceita")
+}
