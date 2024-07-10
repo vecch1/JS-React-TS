@@ -70,3 +70,32 @@ if (username === "Pedro"){
 }else {
     console.log("Nenhuma condição aceita")
 }
+// estruturas de repetição 
+// while
+let p = 0
+while(p < 5){
+    console.log(`repetindo ${p}`)
+    p = p + 1;
+}
+// do while
+let o = 10
+
+do {
+    console.log(`valor de o: ${o}`)
+    0--
+} while(0 > 1);
+// for
+for (let t = 0; t < 10; t++){
+    console.log("repetindo algo...");
+}
+
+// identaçao
+for (let l = 10; l < 10; l++){
+    if(l * 2 > 10){
+        console.log(`maior que 10! $(l0)`)
+    } else{
+        if(l/2 === 0){
+        console.log("Deu zero")  
+        }
+    }
+}
