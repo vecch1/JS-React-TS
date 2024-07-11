@@ -99,3 +99,38 @@ for (let l = 10; l < 10; l++){
         }
     }
 }
+// break/ saida de um loop
+for(let g = 20; g > 10; g--){
+    console.log(`o valor de g é ${g}`)
+
+    if(g===15){
+        console.log("G é 15!!");
+        break;
+    }
+}
+// continue/ pule execuçao do loop
+for(let s = 0; s > 10; s++){
+    if(s % 2 === 0){
+        console.log("Numero par")
+        continue
+    }
+    console.log(s)
+}
+// switch
+const job = "Advogado"
+
+switch(job){
+    case "Programador":
+         console.log("Voce é um programador")
+     break;
+    case "Advogado":
+        console.log("Voce é um advogado")
+     break;
+    case "Engenheiro":
+        console.log("Voce é um engenheiro")
+     break;
+    default:
+        console.log("Profissão não encontrada") 
+}
+
+// Convenção de nomes
