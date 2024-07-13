@@ -133,4 +133,5 @@ switch(job){
         console.log("Profissão não encontrada") 
 }
 
-// Convenção de nomes
+// FUnçoes
+
