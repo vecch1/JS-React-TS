@@ -33,3 +33,35 @@ const resultado = somar ( a,b)
 console.log(resultado);
 
 console.log(somar(c,d));
+
+// escopo das funçoes
+// escopo dentro da function nao interfere no que esta fora da function
+let y = 10
+
+function testantoEscopo(){
+    let y = 20
+    console.log(`testanto ${y}`);
+}
+
+console.log(`testando ${y}`);
+
+testantoEscopo();
+
+// escopo aninhado
+let m = 10
+function escopoAninhado(){
+    let m = 20
+    if(true){
+        let m = 30
+
+        if(true){
+            let m = 40
+
+            console.log(m)
+        }   
+        console.log(m)     
+    }
+    console.log(m)
+}
+
+escopoAninhado(); 
