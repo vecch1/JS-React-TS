@@ -135,3 +135,66 @@ const repeatText = (text, repeat = 2) => {
 };
 repeatText("testando");
 repeatText("agora repete 5 vezes", 5);
+
+// closure
+// funçoes onde temos reaproveitamento do escopo interno de uma funçao
+function someFunction(){
+    let txt = "alguma coisa"
+
+    function display(){
+        console.log(txt)
+    }
+    display();
+}
+
+someFunction();
+
+// closures podem servir para salvar resultados ja executados
+
+const multiplicationclosure = (n) => {
+    return (n) => {
+        return n * n;
+    };
+};
+
+const c1 = multiplicationclosure(5);
+const c2 = multiplicationclosure(10);
+
+console.log(c1);
+console.log(c2);
+
+console.log(c1(5));
+console.log(c2(10));
+
+// recursão
+// se autoinvocar continuamente/ especie de loop
+const untilTen = (n,m) => {
+    if(n < 10){
+        console.log("A funçao parou de executar");
+    }else {
+        const x = n - m ;
+
+        console.log(x);
+
+        untilTen(x,m);
+    }
+};
+
+untilTen(100, 7);
+
+
+
+// faotrial
+
+function factorial(x){
+    if(x === 0){
+        return 1
+    } else {
+        return x * FACTORIAL (x - 1)
+    }
+}
+const num = 6
+
+const result = factorial(num)
+
+console.log(`o faotrial do numero ${num} é ${result}`)
