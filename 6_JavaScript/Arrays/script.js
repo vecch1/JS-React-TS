@@ -46,3 +46,46 @@ console.log(person);
 console.log(person.name);
 console.log(person.age);
 console.log(person.name.length);
+
+// criando e deletando propriedades  / doors e delete
+const car = {
+    engine: 2.0,
+    brand: "Volkswagen",
+    model: "Tiguan",
+    Km: 20000,
+};
+console.log(car);
+
+car.doors = 4;
+
+console.log(car);
+
+delete car.Km;
+console.log(car);
+
+// arrays sao lista de itens
+// obejetos sao para descrever item
+// possivel ter um array de objetos
+
+// copiar todas propriedades de um objeto para outro  / metodo assign
+// objeto ou array com const pode ser modificado
+const objeto = {
+    a: "teste",
+    b: true,
+};
+
+console.log(objeto instanceof Object);
+
+const objeto2 = {
+    c: [],
+};
+
+Object.assign(objeto2, objeto);
+console.log(objeto2);
+
+// podemos verificar propriedades do objeto pelo metodo keys
+// metodo entries recebemos arrays dos nomes das propriedades
+
+console.log(Object.keys(objeto));
+console.log(Object.keys(objeto2));
+
