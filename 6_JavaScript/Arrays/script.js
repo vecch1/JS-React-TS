@@ -89,3 +89,51 @@ console.log(objeto2);
 console.log(Object.keys(objeto));
 console.log(Object.keys(objeto2));
 
+// mutaçao
+const a = {
+    name: "Lucas"
+};
+
+const b = a;
+
+console.log(a);
+console.log(b);
+console.log(a===b);
+
+a.age = 18;
+console.log(b);
+console.log(a);
+
+delete b.age ;
+console.log(b);
+console.log(a);
+
+// loope em arrays
+const user = ["matheus","joao","pedro","thiago"];
+for(let i = 0; i < user.length; i++){
+    console.log(`listando o usuario ${user[i]}`);
+};
+
+// push add um item  ao fim do array/ pop remove elemento do fim 
+const array = ["a","b","c"];
+array.push("d");
+console.log(array);
+console.log(array.length);
+array.pop();
+console.log(array);
+console.log(array.length);
+
+const itemRemovido = array.pop();
+console.log(itemRemovido);
+console.log(array);
+
+// shift remove primeiro elemento e unshift  add itens ao incio
+const letras = ["a","b","c"];
+
+const letter = letras.shift()
+
+console.log(letter);
+console.log(letras);
+
+letras.unshift("p","q")
+console.log(letras)
