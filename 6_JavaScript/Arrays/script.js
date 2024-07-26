@@ -135,5 +135,46 @@ const letter = letras.shift()
 console.log(letter);
 console.log(letras);
 
-letras.unshift("p","q")
-console.log(letras)
+letras.unshift("p","q");
+console.log(letras);
+
+// indexof encontra indice do elemento e lastindexof qnd ha repetiçao de elemento
+const myelements = ["morango", "banana", "abacate","maça"]
+
+console.log(myelements.indexOf("banana"));
+console.log(myelements.indexOf("morango"));
+console.log(myelements[2]);
+console.log(myelements[myelements.indexOf("abacate")]);
+
+console.log(myelements.lastIndexOf("abacate"));
+
+// slice extarir um elemento menor de um array maior
+const testeslice = ["a","b","c","d","e"]
+const subarray = testeslice.slice(2,4 + 1)
+
+console.log(subarray)
+console.log(testeslice)
+
+// foreach  parecido com for e while mas é um metodo
+const foreach = [1,2,3,4,5]
+foreach.forEach((numero) => {
+    console.log(`o numero é ${numero}`);
+})
+
+const posts =[
+    {title: "primeiro post", category: "php"},
+    {title: "segundo post", category: "java"},
+    {title: "terceiro post", category: "python"},
+];
+posts.forEach((post) => {
+    console.log(`exibindo ${post.title}, da categoria ${post.category}`);
+})
+
+// includes verifica se array tem um elemento 
+const brands = ["bmw","vw","fiat"]
+console.log(brands.includes("fiat"))
+
+// reverse inverste elementos de um array
+const reverse = ["carro","caminhão","trator","moto"]
+
+console.log(reverse.reverse())
