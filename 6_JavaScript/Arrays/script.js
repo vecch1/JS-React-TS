@@ -178,3 +178,39 @@ console.log(brands.includes("fiat"))
 const reverse = ["carro","caminhão","trator","moto"]
 
 console.log(reverse.reverse())
+
+// trim remove tudo q n é texto em uma string
+const trimTest = "    testando \n    ";
+console.log(trimTest);
+console.log(trimTest.trim());
+
+// padstart insere texto no inicio da string
+const Testpadstart = "1";
+
+const newnumber = Testpadstart.padStart(4, "0");
+console.log(Testpadstart);
+console.log(newnumber);
+
+
+const TestePadEnd = newnumber.padEnd(10, "0")
+console.log(TestePadEnd)
+
+// split divide string em um array
+const frase = "O rato roeu a roupa do rei de roma"
+
+const arrayDaFrase = frase.split("");
+console.log(arrayDaFrase)
+
+// join une array em uma string
+
+const fraseDeNovo = arrayDaFrase.join("");
+console.log(fraseDeNovo);
+
+const itensParaCompar = ["mouse", "teclado"]
+
+const FraseDeCompra = `prescisamos comprar: ${itensParaCompar.join(", ")}.`
+console.log(FraseDeCompra);
+
+// repeat repete texto n vezes
+const palavra = " Testando "
+console.log(palavra.repeat(5));
