@@ -214,3 +214,64 @@ console.log(FraseDeCompra);
 // repeat repete texto n vezes
 const palavra = " Testando "
 console.log(palavra.repeat(5));
+
+// rest operator é simbolo para receber indefnidos argumento de uma funçao
+const somaInfinita = (...args) => {
+    let total = 0
+    for(let i = 0; i < args.length; i++){
+        total += args[i];
+    }
+    return total
+};
+
+console.log(somaInfinita(1,2,3,8));
+
+// FOR OF/ seelhante e + simples q o FOR
+const somaInfinita2 = (...args) =>{
+    let total = 0
+
+    for(num of args){
+        total += num;
+    }
+    return total;
+};
+
+console.log(somaInfinita2(1,2,3,4,4));
+
+// destructing em objetos/ desestruturar algum dado
+const userDetail = {
+    firstName: "Lucas",
+    lastName: "Vecchi",
+    job:"Programador"
+}
+
+const {firstName,lastName,job} = userDetail
+console.log(firstName,lastName,job);
+
+// destructing em arrays/ desestruturar um array
+
+const myList = ["avião", "submarino", "carro"];
+const [veiculo,veiculo2,veiculo3] = myList;
+
+console.log(veiculo,veiculo2,veiculo3);
+
+
+// Json / comunicaçao entre API e FrontEnd
+const myJson = '{"name": "lucas", "age": 31, "skills": ["php","java"]}'
+// conversão de jsonpara obj e obj para json
+const myObject = JSON.parse(myJson)
+console.log(myObject)
+console.log(myObject.name)
+console.log(typeof myObject)
+
+// JSON INVALIDO
+// const badJson '{"name": lucas, "age": 18}';
+// const badObject = JSON.parse(badJson);
+
+myObject.isOpentoWork = true;
+console.log(myObject)
+
+
+const newJson = JSON.stringify(myObject)
+console.log(newJson)
+console.log(typeof newJson)
