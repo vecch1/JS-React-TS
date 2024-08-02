@@ -23,3 +23,25 @@ console.log(pessoa.getAge());
 
 pessoa.setName("thiago");
 console.log(pessoa.nome); // Isso vai imprimir "thiago"
+
+// prototypes / herda recursos uns dos outros
+const text = "asd"
+
+console.log(Object.getPrototypeOf(text));
+
+const bool = true
+
+console.log(Object.getPrototypeOf(bool));
+
+const arr = []
+
+console.log(Object.getPrototypeOf(arr));
+
+// mais sobre prototype
+const myObject = {
+    a: "b"
+}
+console.log(Object.getPrototypeOf(myObject));
+
+const mySecondObject = Object.create(myObject)
+console.log(mySecondObject);
