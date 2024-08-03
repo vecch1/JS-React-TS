@@ -117,3 +117,73 @@ scania.descreverCaminhão();
 
 const c2 = new Caminhão(4, "preta")
 console.log(c2)
+
+// substituindo propriedades pelo prototype
+class Humano {
+    constructor (nome,idade){
+        this.nome = nome
+        this.idade = idade
+    }
+}
+const Lucas = new Humano("Lucas",18)
+console.log(Lucas)
+
+Humano.prototype.idade = "Não definido"
+console.log(Lucas.idade)
+console.log(Humano.prototype.idade)
+
+// symbol com classes / possivel criar propriedade unica e imutavel
+class Aviao {
+        constructor(marca,turbina){
+            this.marca = marca
+            this.turbina = turbina
+        }
+}
+const asas = Symbol()
+Aviao.prototype[asas] = 2
+
+ const Aviao1 = new Aviao ("marca1","3")
+ console.log(Aviao1)
+ console.log(Aviao1[asas])
+
+//  getter e setter / get exibe valor de propriedade / set altera valor
+class Post {
+    constructor(titulo,descricao,tags){
+        this.titulo = titulo 
+        this.descricao = descricao 
+        this.tags = tags
+    }
+get exibirTitulo(){
+    return `voce esta lendo ${this.titulo}`
+  }
+set adicionarTags(tags){
+    const tagsArray = tags.split(",")
+    this.tags = tagsArray
+}
+}
+const myPost = new Post ("algum post", "é um post sobre programaçao")
+console.log(myPost)
+console.log(myPost.exibirTitulo)
+
+myPost.adicionarTags = "programaçao, Javascript , Js"
+console.log(myPost);
+
+// herança / uma classe pode herdar propriedades "extends" para add e "super" ára enviar valores
+class Mamifero{
+    constructor(patas){
+        this.patas = patas
+    }
+}
+class lobo extends Mamifero {
+    constructor(patas,nome){
+        super(patas,patas)
+        this.nome = nome
+    }
+}
+
+const Lobo1 = new lobo(4, "Lobo1")
+console.log(Lobo1)
+
+// instanceof  / verifica se objeto é pai de outro
+console.log(Lobo1 instanceof lobo)
+console.log(lobo instanceof Mamifero)
