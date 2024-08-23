@@ -25,8 +25,8 @@ const products = document.getElementsByClassName("products")
 console.log(products)
 
 // por regras de css  (queryselectorall) e (queryselector)
-const productstQuery = document.querySelectorAll (".product")
-console.log(productstQuery)
+const productsQuery = document.querySelectorAll (".product")
+console.log(productsQuery)
 
 
 const mainContainer = document.querySelector("#main-container")
@@ -54,3 +54,44 @@ h2.textContent = "meu novo titulo"
 
 header.replaceChild(h2, title)
 
+
+// nós de textos  usando createTextoNode
+
+const myText = document.createTextNode("Agora mais um titulo")
+console.log(myText)
+
+const h3 = document.createElement("h3")
+h3.appendChild(myText)
+console.log(h3)
+
+mainContainer.appendChild(h3)
+
+
+// ler - getattribute    alterar = setatributte
+const firstLink = navLinks.querySelector("a")
+console.log(firstLink)
+
+firstLink.setAttribute("href", "https://google.com")
+firstLink.setAttribute("target", "_blank")
+
+
+console.log(firstLink.getAttribute("href"))
+
+// altura e largura dos elementos / offsetwidth e offsetheight
+// se queremos desconsiderar as bordas clientwidth e clientHeight
+const footer = document.querySelector("footer")
+console.log(footer.offsetHeight)
+console.log(footer.offsetWidth)
+
+console.log(footer.clientHeight)
+console.log(footer.clientWidth)
+
+// alterando estilos do elemento 
+mainContainer.style.color = "red"
+mainContainer.style.backgroundColor = "#333"
+mainContainer.style.paddingBottom = "20px"
+
+// estilizando varios itens - HTMLCollection
+for(const li of listItens){
+    li.style.backgroundColor = "red"
+}
