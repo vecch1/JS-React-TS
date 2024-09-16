@@ -61,4 +61,47 @@ const user = {
     }
 }
 
-user.sayUserName()
+// user.sayUserName()
+
+// Filter  / metodo de array para filtrar dados
+const arr = [1,2,3,4,5]
+
+const highNumbers = arr.filter((n) => {
+    if(n >= 3){
+        return n;
+    }
+})
+console.log(highNumbers);
+
+const users = [
+    {name: "Lucas", avaliable: true},
+    {name: "Pedro", avaliable: false},
+    {name: "Thiago", avaliable: false},
+    {name: "Gabriel", avaliable: true},
+    {name: "Diego", avaliable: false},
+    {name: "Bruno", avaliable: true},
+]
+
+const avaliableUsers = users.filter((user) => user.avaliable)
+console.log(avaliableUsers)
+
+// Map / percorre elementos do array
+const products = [
+    {name:"Camisa", price: 10.99, category: "Roupas"},
+    {name:"Churrasqueira", price: 150, category: "Churrasco"},
+    {name:"Fogão", price: 499, category: "Eletro"},
+    {name:"Calça", price: 87.99, category: "Roupas"}
+]
+
+products.map((product) => {
+    if(product.category === "Roupas"){
+        product.onSale = true
+    }
+})
+
+console.log(products)
+
+// template literals 
+const userName = "Lucas"
+const  userAge = 18
+console.log(`o nome é ${userName} e a idade é ${userAge}` )
