@@ -119,7 +119,7 @@ const productDetails = {
     color:"Azul"
 }
 
-const ( names: productName ,price,category,color) = productDetails
+
 console.log(`o nome do produto é ${productName},ele custa R$${price} e é da cor ${color}`)
 
 // spread operator / inserir novos valores em um array ou objeto
