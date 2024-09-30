@@ -45,3 +45,22 @@ const printData = async() => {
 };
 
 printData();
+
+// requisiçao de post
+
+const form = document.querySelector("#post-form")
+const titleinput = document.querySelector("#title")
+const  bodyinput = document.querySelector("#body")
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+
+    axios.post("https://jsonplaceholder.typicode.com/posts", {
+
+         title: titleinput,value, 
+         body: bodyinput.value, 
+         userid: 1
+    })
+})
+
+// globas instances
