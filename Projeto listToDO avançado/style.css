@@ -11,3 +11,21 @@
     background-size: cover;
   }
 
+.container{
+  border-radius: 15px;
+  background-color: white;
+  height: 450px;
+  max-width: 450px;
+  margin: 3rem auto 0 ;
+  padding: 1.5rem;
+}
+
+.container header{
+  align-items: center;
+}
+
+.form-control button {
+  border-color: rgb(83, 83, 249);
+  width: 15px;
+  height: 19px;
+}
