@@ -50,9 +50,22 @@
   width: 16pc;
   height: 2pc;
   border: none;
+  
 }
 
-.input-form required{
-  color: red;
+#form span {
+  cursor: pointer;
 }
 
+#form  input[type="submit"] {
+  border: solid 1px blue;
+  background-color: rgb(106, 106, 231);
+  color: black;
+  width: 70px;
+  height: 30px;
+}
+
+#form input[type="submit"]:hover{
+  color: rgb(60, 14, 103);
+  background-color: rgb(80, 80, 222);
+}
