@@ -69,3 +69,19 @@
   color: rgb(60, 14, 103);
   background-color: rgb(80, 80, 222);
 }
+
+#generated-password {
+  border: 1px solid #0181d7;
+  background-color: #46b3fb;
+  border-radius: 5px;
+  height: 80px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: .4rem;
+  color: #0a0a0a;
+  text-align: center;
+}
+
+#generated-password p {
+  color: black;
+}
