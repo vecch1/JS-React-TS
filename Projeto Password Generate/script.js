@@ -10,16 +10,25 @@ gerarSenha.addEventListener('click', function() {
 
 
 
+function generatePassword() {
+    // Gera uma senha aleatória
+    const letras = 'abcdefghijklmnopqrstuvwxyz'
+    const numeros = '123456789'
+    const simbolos = '#&*_'
+    const caracteres = letras + letras.toUpperCase() + numeros + simbolos
+    let senha = ''
 
-
-function generatePassword(){
-    
+    for (let i = 0; i < 8; i++){
+        const caractereAleatoria = Math.floor(Math.random() + caracteres.length)
+        senha += caracteres.charAt(caractereAleatoria)
+    }
+    document.getElementById('senha').value = senha
 }
 
 
 
-generatePasswordBTN.addEventListener('click', function(){
-    // Gera uma senha aleatória
-    
 
+
+generatePasswordBTN.addEventListener('click', function(){
+   generatePassword();
 })
