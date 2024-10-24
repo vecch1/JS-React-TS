@@ -1,12 +1,25 @@
-const Name = document.getElementById("#nome");
-const Email = document.getElementById("#email");
-const Password = document.getElementById("#senha");
-const ConfirmaSenha = document.getElementById("#confirmaSenha")
-const Cadastrar_BTN = document.getElementById("#submit-btn")
-const GeneratePassword = document.getElementById("#genarate-password")
+const gerarSenha = document.getElementById('gerar-senha');
+const generatedPasswordDiv = document.getElementById('generated-password');
+const generatePasswordBTN = document.getElementById('genPassword-btn');
 
 
-if (Password.value !== ConfirmaSenha.value){
-    console.log("A  senha e a confirmação de senha não são iguais");
-alert("A senha e a confirmação de senha não são iguais");
+gerarSenha.addEventListener('click', function() {
+    // Torna a div visível
+    generatedPasswordDiv.style.display = 'block';
+});
+
+
+
+
+
+function generatePassword(){
+    
 }
+
+
+
+generatePasswordBTN.addEventListener('click', function(){
+    // Gera uma senha aleatória
+    
+
+})
