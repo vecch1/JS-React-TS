@@ -19,16 +19,15 @@ function generatePassword() {
     let senha = ''
 
     for (let i = 0; i < 8; i++){
-        const caractereAleatoria = Math.floor(Math.random() + caracteres.length)
-        senha += caracteres.charAt(caractereAleatoria)
+        const caracteresAleatoria = Math.floor(Math.random() + caracteres.length)
+        senha += caracteres.charAt(caracteresAleatoria)
     }
-    document.getElementById('senha').value = senha
+
+    document.querySelector("p").innerText =  caracteresAleatoria 
 }
 
 
 
 
 
-generatePasswordBTN.addEventListener('click', function(){
-   generatePassword();
-})
+
