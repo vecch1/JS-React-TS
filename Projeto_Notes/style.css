@@ -7,14 +7,14 @@
   }
   
   body {
-    background-color: #202124;
+    background-color: #0e0e0f;
   }
   
   /* Cabeçalho */
   header {
     border-bottom: 1px solid #ccc;
     padding: 1rem 2rem;
-    color: #fff;
+    color: #f12222;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -27,7 +27,7 @@
   }
   
   #search-input {
-    background-color: #525356;
+    background-color: #edf0f4;
     border-radius: 5px;
     border: none;
     padding: 10px;
@@ -41,9 +41,9 @@
   }
   
   #export-notes {
-    background-color: #333;
-    border: 2px solid #fff;
-    border-radius: 4px;
+    background-color: #3d3a3a;
+    border: 2px solid #a5a5a5;
+    border-radius: 8px;
     color: #fff;
     padding: 5px 15px;
     cursor: pointer;
@@ -51,7 +51,7 @@
   }
   
   #export-notes:hover {
-    background-color: #fff;
+    background-color: #a5a5a5;
     color: #333;
   }
   
@@ -81,6 +81,11 @@
     background-color: #333;
     color: #fff;
   }
+
+  #add-note-container button:hover{
+    background-color: #2d2d2d;
+  }
+
   
   /* Notas */
   #notes-container {
@@ -93,8 +98,8 @@
   .note {
     min-height: 200px;
     padding: 1rem;
-    border: 1px solid #ccc;
-    background-color: #202124;
+    border: 1px solid #df2424;
+    background-color: #2e4ca7;
     border-radius: 10px;
     color: #fff;
     position: relative;
