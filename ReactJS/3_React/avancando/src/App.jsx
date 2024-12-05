@@ -13,6 +13,13 @@ import ListRender from './components/ListRender';
 // import render condicional
 import ConditionalRender from './components/ConditionalRender';
 
+// Props
+import Props from './components/Props';
+import CarDetails from './components/CarDetails';
+
+// desestruturando props
+import CarDetails from './components/CarDetails';
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -30,6 +37,11 @@ function App() {
         <ListRender/>  
         {/* render condicional */}
         <ConditionalRender/>
+        {/* props */}
+        <Props name="Lucas" />
+        {/* desesttruturando props */}
+        {/* numeros no react são entre chaves */}
+        <CarDetails Brand="VW" Km={999} color="Verde" />
       </div>
         
         
