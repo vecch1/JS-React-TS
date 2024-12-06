@@ -262,8 +262,8 @@ nav {
     margin-bottom: 25px;
 }
 
-.searchdomain-container input [type="submit"]{
-    background-color: rgb(18, 195, 18);
+.searchdomain-container input[type="submit"]{
+    background-color: rgb(23, 209, 23);
     padding: 15px 30px;
     color: #fff;
     font-size: 24px;
@@ -310,11 +310,12 @@ nav {
 }
 
 .contact-container input[type="submit"]{
-    display: block;
+    
     margin: o auto;
     background-color: #2cc76a;
     color: #fff;
     cursor: pointer;
+    
 }
 
 /* footer */
