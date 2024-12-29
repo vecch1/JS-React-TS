@@ -9,5 +9,18 @@ body {
 }
 
 h1 {
-  color:green;
+  color:red;
 }
+
+/* 5 classe dinamicas */
+.red-title {
+ font-size: 50px; 
+ color: red;
+ background-color: #000;
+}
+
+.Title {
+  font-size: 50px; 
+  color: rgb(251, 255, 0);
+  background-color: #000;
+ }
