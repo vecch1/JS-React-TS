@@ -11,6 +11,27 @@ const ImcCalc = () => {
     setWeight("");
   };
 
+  const validDigits = (text) => {
+    return text.replace(/^0-9,/g, "")
+  }
+
+
+  const handleHeightChange = (e) => {
+
+    const updatedValue = validDigits(e.target.value)
+
+    setHeight(updatedValue);
+
+  }
+
+  const handleWeightChange = (e) => {
+
+    const updatedValue = validDigits(e.target.value)
+
+    setWeight(updatedValue);
+
+  }
+
   return (
     <div id="calc-container">
       <h2>calculadora IMC React</h2>
@@ -18,11 +39,11 @@ const ImcCalc = () => {
         <div className="form-inputs">
           <div className="form-control">
             <label htmlFor="Height">Altura:</label>
-            <input type="text" name='height' id='height' placeholder='Exemplo 1,70' onChange={(e) => setHeight(e.target.value)} value={height} />
+            <input type="text" name='height' id='height' placeholder='Exemplo 1,70' onChange={(e) => handleHeightChange(e)} value={height} />
           </div>
           <div className="form-control">
             <label htmlFor="Weight">Peso:</label>
-            <input type="text" name='Weight' id='Weight' placeholder='Exemplo 70,5' onChange={(e) => setWeight(e.target.value)} value={weight} />
+            <input type="text" name='Weight' id='Weight' placeholder='Exemplo 70,5' onChange={(e) => handleWeightChange(e)} value={weight} />
           </div>
         </div>
         <div className="action-control">
