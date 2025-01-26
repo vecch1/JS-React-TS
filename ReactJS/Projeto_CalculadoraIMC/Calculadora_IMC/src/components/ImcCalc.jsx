@@ -33,7 +33,7 @@ const ImcCalc = ({ calcImc }) => {
   return (
     <div>
       <div id="calc-container">
-        <h2>Calculadora de IMC</h2>
+        <h2>Calculadora  IMC</h2>
         <form id="imc-form">
           <div className="form-inputs">
             <div className="form-control">
@@ -42,7 +42,7 @@ const ImcCalc = ({ calcImc }) => {
                 type="text"
                 name="height"
                 id="height"
-                placeholder="Exemplo 1,75"
+                placeholder="Exemplo 1,80"
                 onChange={(e) => handleHeightChange(e)}
                 value={height}
               />
@@ -53,7 +53,7 @@ const ImcCalc = ({ calcImc }) => {
                 type="text"
                 name="weight"
                 id="weight"
-                placeholder="Exemplo 70,5"
+                placeholder="Exemplo 60,5"
                 onChange={(e) => handleWeightChange(e)}
                 value={weight}
               />
